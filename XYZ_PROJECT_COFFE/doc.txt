@@ -1,0 +1,94 @@
+2. Scroll Suave
+javascript
+
+Copiar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+document.querySelectorAll('a[href^="#"]'): Selecciona todos los enlaces que apuntan a anclas (secciones de la misma página).
+e.preventDefault(): Previene el comportamiento predeterminado del enlace, que sería saltar directamente a la sección sin animación.
+scrollIntoView({ behavior: 'smooth' }): Desplaza suavemente la vista hacia la sección correspondiente al ancla.
+3. Cerrar Menú Móvil
+javascript
+
+Copiar
+document.querySelector('.nav-links').classList.remove('active');
+Este código debe estar dentro del evento de clic de los enlaces para cerrar el menú móvil cuando un enlace es clicado.
+
+4. Cambiar Enlace Activo al Hacer Scroll
+javascript
+
+Copiar
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+        }
+    });
+});
+window.addEventListener('scroll', ...): Escucha el evento de desplazamiento de la ventana.
+sections.forEach(section => {...}): Itera sobre cada sección para verificar cuál está en la vista.
+pageYOffset: Devuelve la cantidad de píxeles que el documento ha sido desplazado verticalmente.
+link.classList.add('active'): Marca el enlace correspondiente como activo.
+5. Animación de Elementos al Hacer Scroll
+javascript
+
+Copiar
+const animateOnScroll = function() {
+    const elements = document.querySelectorAll('.service-card, .gallery-item, .testimonial');
+
+    elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (elementPosition < screenPosition) {
+            element.style.opacity = 1;
+            element.style.transform = 'translateY(0)';
+        }
+    });
+};
+
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+getBoundingClientRect().top: Obtiene la posición del elemento respecto a la parte superior de la ventana.
+window.innerHeight: Devuelve la altura interior de la ventana gráfica.
+element.style.opacity y element.style.transform: Cambia el estilo del elemento para que aparezca con una animación.
+6. Formulario de Contacto
+javascript
+
+Copiar
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('¡Gracias por tu mensaje! Te responderemos lo antes posible.');
+    this.reset();
+});
+document.getElementById('contactForm'): Selecciona el formulario por su ID.
+e.preventDefault(): Previene que el formulario se envíe de forma tradicional.
+this.reset(): Reinicia los campos del formulario después de enviar el mensaje.
+Variables Globales en JavaScript
+JavaScript tiene algunas variables globales que puedes utilizar, como:
+
+window: Representa la ventana del navegador.
+document: Representa el documento HTML cargado.
+console: Permite acceder a la consola del navegador para depurar (puedes usar console.log() para imprimir información).
+Conclusión
+Este código maneja la interacción de un menú móvil, animaciones de desplazamiento y un formulario de contacto, utilizando conceptos fundamentales de JavaScript como eventos, selección de elementos y manipulación del DOM. Si tienes más dudas sobre alguna parte o quieres profundizar, ¡pregunta sin dudar!
