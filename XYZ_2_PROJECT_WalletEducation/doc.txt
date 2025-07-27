@@ -4,3 +4,12 @@ CSS
     the style use Claymorphism
 JavaScript
 Solidity
+
+Tareas / Work:
+
+- crear un sitio web de educación sobre wallets y criptomonedas.
+- utilizar HTML, CSS y JavaScript.
+- implementar un diseño atractivo y funcional.
+- incluir codigo solidity para la interaciones con la billetera.
+- usar metamask para las interacciones con la billetera.
+- vamos a usar sepoliaETH para las pruebas de la billetera.
