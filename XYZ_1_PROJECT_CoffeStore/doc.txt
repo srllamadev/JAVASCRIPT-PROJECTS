@@ -1,3 +1,22 @@
+se this:
+HTML
+CSS
+    use bento style
+JavaScript
+    añadir interacciones con el menú móvil y animaciones de desplazamiento
+    implementar un login o BD para el registro de usuarios
+    añadir un boton de telegram y wattsapp
+
+Tareas / Work:
+- documentación del proyecto.
+- crear un sitio web de educación sobre wallets y criptomonedas.    
+- utilizar HTML, CSS y JavaScript.
+- implementar un diseño atractivo y funcional.
+- impementar CSS con bento style
+
+
+--------------------------------
+
 2. Scroll Suave
 
 
