@@ -1,7 +1,7 @@
 2. Scroll Suave
-javascript
 
-Copiar
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -14,16 +14,16 @@ document.querySelectorAll('a[href^="#"]'): Selecciona todos los enlaces que apun
 e.preventDefault(): Previene el comportamiento predeterminado del enlace, que sería saltar directamente a la sección sin animación.
 scrollIntoView({ behavior: 'smooth' }): Desplaza suavemente la vista hacia la sección correspondiente al ancla.
 3. Cerrar Menú Móvil
-javascript
 
-Copiar
+
+
 document.querySelector('.nav-links').classList.remove('active');
 Este código debe estar dentro del evento de clic de los enlaces para cerrar el menú móvil cuando un enlace es clicado.
 
 4. Cambiar Enlace Activo al Hacer Scroll
-javascript
 
-Copiar
+
+
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -50,9 +50,9 @@ sections.forEach(section => {...}): Itera sobre cada sección para verificar cu�
 pageYOffset: Devuelve la cantidad de píxeles que el documento ha sido desplazado verticalmente.
 link.classList.add('active'): Marca el enlace correspondiente como activo.
 5. Animación de Elementos al Hacer Scroll
-javascript
 
-Copiar
+
+
 const animateOnScroll = function() {
     const elements = document.querySelectorAll('.service-card, .gallery-item, .testimonial');
 
@@ -73,9 +73,9 @@ getBoundingClientRect().top: Obtiene la posición del elemento respecto a la par
 window.innerHeight: Devuelve la altura interior de la ventana gráfica.
 element.style.opacity y element.style.transform: Cambia el estilo del elemento para que aparezca con una animación.
 6. Formulario de Contacto
-javascript
 
-Copiar
+
+
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('¡Gracias por tu mensaje! Te responderemos lo antes posible.');
