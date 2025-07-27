@@ -1,0 +1,175 @@
+// Datos de ejemplo para transacciones
+const transactions = [
+    { id: 1, type: 'receive', title: 'Recompensa de lección', date: 'Hoy, 10:30 AM', amount: 5.00 },
+    { id: 2, type: 'send', title: 'Enviado a María', date: 'Ayer, 14:15', amount: 2.50 },
+    { id: 3, type: 'receive', title: 'Depósito inicial', date: '15 Jul, 09:45', amount: 20.00 },
+    { id: 4, type: 'send', title: 'Compra de libro', date: '14 Jul, 16:20', amount: 7.00 }
+];
+
+// Datos de ejemplo para lecciones
+const lessons = [
+    { id: 1, title: '¿Qué es el dinero?', progress: 100, reward: 5 },
+    { id: 2, title: 'Ahorrar vs. Gastar', progress: 75, reward: 5 },
+    { id: 3, title: 'Introducción a las criptomonedas', progress: 30, reward: 5 },
+    { id: 4, title: 'Gestión de presupuesto', progress: 0, reward: 5 }
+];
+
+// Referencias a elementos DOM
+const transactionList = document.getElementById('transactionList');
+const lessonsContainer = document.getElementById('lessonsContainer');
+const sendModal = document.getElementById('sendModal');
+const receiveModal = document.getElementById('receiveModal');
+const closeSendModal = document.getElementById('closeSendModal');
+const closeReceiveModal = document.getElementById('closeReceiveModal');
+const cancelSend = document.getElementById('cancelSend');
+const confirmSend = document.getElementById('confirmSend');
+const sendBtn = document.getElementById('sendBtn');
+const receiveBtn = document.getElementById('receiveBtn');
+const notification = document.getElementById('notification');
+const copyAddressBtn = document.getElementById('copyAddress');
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+// Cargar transacciones
+function loadTransactions() {
+    transactionList.innerHTML = '';
+    
+    if (transactions.length === 0) {
+        transactionList.innerHTML = `
+            <div class="empty-state">
+                <i class="fas fa-exchange-alt"></i>
+                <p>No hay transacciones aún</p>
+            </div>
+        `;
+        return;
+    }
+    
+    transactions.forEach(transaction => {
+        const transactionItem = document.createElement('div');
+        transactionItem.classList.add('transaction-item');
+        
+        transactionItem.innerHTML = `
+            <div class="transaction-icon">
+                <i class="fas fa-${transaction.type === 'receive' ? 'arrow-down' : 'arrow-up'}"></i>
+            </div>
+            <div class="transaction-details">
+                <div class="transaction-title">${transaction.title}</div>
+                <div class="transaction-date">${transaction.date}</div>
+            </div>
+            <div class="transaction-amount ${transaction.type === 'receive' ? 'positive' : 'negative'}">
+                ${transaction.type === 'receive' ? '+' : '-'}${transaction.amount.toFixed(2)} EDU
+            </div>
+        `;
+        
+        transactionList.appendChild(transactionItem);
+    });
+}
+
+// Cargar lecciones
+function loadLessons() {
+    lessonsContainer.innerHTML = '';
+    
+    lessons.forEach(lesson => {
+        const lessonCard = document.createElement('div');
+        lessonCard.classList.add('lesson-card');
+        
+        lessonCard.innerHTML = `
+            <div class="lesson-title">${lesson.title}</div>
+            <div class="lesson-progress">
+                <div class="progress-bar" style="width: ${lesson.progress}%"></div>
+            </div>
+            <div class="lesson-footer">
+                <div>
+                    ${lesson.progress}% completado
+                </div>
+                <div class="reward-badge">
+                    Recompensa: ${lesson.reward} EDU
+                </div>
+            </div>
+        `;
+        
+        lessonsContainer.appendChild(lessonCard);
+    });
+}
+
+// Mostrar notificación
+function showNotification(message, isError = false) {
+    notification.textContent = message;
+    notification.classList.remove('error');
+    
+    if (isError) {
+        notification.classList.add('error');
+    }
+    
+    notification.classList.add('show');
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000);
+}
+
+// Event Listeners
+sendBtn.addEventListener('click', () => {
+    sendModal.style.display = 'flex';
+});
+
+receiveBtn.addEventListener('click', () => {
+    receiveModal.style.display = 'flex';
+});
+
+closeSendModal.addEventListener('click', () => {
+    sendModal.style.display = 'none';
+});
+
+closeReceiveModal.addEventListener('click', () => {
+    receiveModal.style.display = 'none';
+});
+
+cancelSend.addEventListener('click', () => {
+    sendModal.style.display = 'none';
+});
+
+confirmSend.addEventListener('click', () => {
+    const recipient = document.getElementById('recipient').value;
+    const amount = parseFloat(document.getElementById('amount').value);
+    
+    if (!recipient || !amount || amount <= 0) {
+        showNotification('Por favor completa todos los campos correctamente', true);
+        return;
+    }
+    
+    // Aquí iría la lógica para enviar realmente
+    showNotification(`¡Enviado ${amount.toFixed(2)} EDU con éxito!`);
+    
+    // Limpiar formulario
+    document.getElementById('recipient').value = '';
+    document.getElementById('amount').value = '';
+    document.getElementById('message').value = '';
+    
+    sendModal.style.display = 'none';
+});
+
+copyAddressBtn.addEventListener('click', () => {
+    // Simular copiar la dirección al portapapeles
+    showNotification('¡Dirección copiada al portapapeles!');
+});
+
+// Manejar cambio de pestañas
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remover clase activa de todas las pestañas
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        // Agregar clase activa a la pestaña seleccionada
+        tab.classList.add('active');
+        
+        // Mostrar el contenido correspondiente
+        const tabName = tab.getAttribute('data-tab');
+        document.getElementById(`${tabName}-content`).classList.add('active');
+    });
+});
+
+// Inicializar la aplicación
+loadTransactions();
+loadLessons();
