@@ -1,0 +1,4 @@
+work
+- revisar la conexion con los scripts
+- revisar el archivo index.html y el script.js
+- documentar en un .md
