@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aurora Shop</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <div class="background"></div>
-  <header>
-    <h1>Aurora Shop</h1>
-  </header>
 
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <h1>Aurora Shop</h1>
+    <div class="nav-right">
+      <select id="categoryFilter">
+        <option value="all">Todas</option>
+        <option value="ropa">Ropa</option>
+        <option value="arte">Arte</option>
+        <option value="tecnologia">Tecnología</option>
+      </select>
+      <div class="cart">
+        🛒 <span id="cartCount">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
   <main class="products">
-    <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Producto 1">
-      <h2>Producto 1</h2>
+    <div class="card" data-category="ropa">
+      <img src="https://via.placeholder.com/150" alt="Producto 1"/>
+      <h2>Chaqueta Boreal</h2>
       <p>$25.00</p>
       <button>Agregar al carrito</button>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Producto 2">
-      <h2>Producto 2</h2>
+
+    <div class="card" data-category="arte">
+      <img src="https://via.placeholder.com/150" alt="Producto 2"/>
+      <h2>Pintura Aurora</h2>
       <p>$40.00</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="card" data-category="tecnologia">
+      <img src="https://via.placeholder.com/150" alt="Producto 3"/>
+      <h2>Auriculares LED</h2>
+      <p>$99.00</p>
       <button>Agregar al carrito</button>
     </div>
     <!-- Agrega más productos aquí -->
