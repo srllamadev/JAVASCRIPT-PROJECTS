@@ -1,0 +1,6 @@
+tareas:
+
+- documentar el proyecto con un archivo .md
+- mejorar la interoperatibilidad del sitio web
+- añadir interacciones con el menú móvil y animaciones de desplazamiento
+- implementar un login o BD para el registro de usuarios
