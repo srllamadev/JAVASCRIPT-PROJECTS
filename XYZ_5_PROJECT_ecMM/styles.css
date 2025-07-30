@@ -140,3 +140,49 @@ button:hover {
   cursor: pointer;
 }
 
+.cart-modal {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 300px;
+  color: white;
+  z-index: 20;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+}
+
+.cart-modal h2 {
+  margin-top: 0;
+}
+
+.cart-modal ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.cart-modal li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cart-modal button {
+  margin-top: 1rem;
+  width: 100%;
+  background: #ff6f61;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
