@@ -1,0 +1,3 @@
+dividir por secciones
+documentar el js  
+reducir la velocida a menos fps 
