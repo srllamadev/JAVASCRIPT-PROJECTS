@@ -1,0 +1,2 @@
+ver los errores en la consola
+documentar el js
