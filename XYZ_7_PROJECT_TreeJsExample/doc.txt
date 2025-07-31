@@ -1,2 +1,29 @@
 ver los errores en la consola
 documentar el js
+
+
+Solución permanente para usar siempre la última versión:
+Usa uno de estos CDNs confiables:
+
+jsdelivr (recomendado):
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
+CDN oficial de threejs.org:
+
+
+<script src="https://threejs.org/build/three.min.js"></script>
+<!-- Última versión estable -->
+Skypack (para módulos ES):
+
+
+<script type="module">
+  import * as THREE from 'https://cdn.skypack.dev/three@0.164.1';
+</script>
+Importante para futuros proyectos:
+
+URL correcta en:
+
+cdnjs.com
+
+jsdelivr.com/npm/three
