@@ -27,3 +27,7 @@ URL correcta en:
 cdnjs.com
 
 jsdelivr.com/npm/three
+
+----------------------------------------
+RESOLVER PROBLEMAS DEL TEST.html
+---------------------------------------
