@@ -1,0 +1,109 @@
+mindmap
+  root((Servidores))
+    Concepto Básico
+      Definición
+        Computadora que provee servicios/resources a otras (clientes)
+        Funciona 24/7 en entornos controlados
+      Objetivo Principal
+        Centralizar recursos y servicios
+        Garantizar disponibilidad y confiabilidad
+    Arquitectura Cliente-Servidor
+      Cliente
+        Solicita recursos/services
+      Servidor
+        Responde a las solicitudes
+      Red
+        Medio de comunicación
+    Componentes de Hardware
+      Procesador (CPU)
+        Núcleos y velocidad
+        Arquitecturas x86, ARM
+      Memoria (RAM)
+        Almacenamiento temporal rápido
+        Crítico para el rendimiento
+      Almacenamiento
+        Discos Duros (HDD)
+        Unidades de Estado Sólido (SSD)
+        Configuraciones RAID
+      Tarjeta de Red (NIC)
+        Conectividad de alta velocidad
+      Fuente de Poder
+        Redundancia (PSU duales)
+      Sistema de Refrigeración
+        Ventiladores
+        Sistemas líquidos en centros de datos
+    Tipos de Servidores (por Función)
+      Servidores Web
+        Aloja sitios y aplicaciones web
+        Ej: Apache, Nginx, IIS
+      Servidores de Base de Datos
+        Almacena y gestiona datos
+        Ej: MySQL, PostgreSQL, SQL Server, Oracle
+      Servidores de Aplicaciones
+        Ejecuta la lógica de negocio
+        Ej: JBoss, WebLogic, Tomcat
+      Servidores de Correo
+        Gestiona el envío/recepción de emails
+        Ej: Exchange, Postfix, Sendmail
+      Servidores DNS
+        Traduce nombres de dominio a IPs
+        Ej: BIND, Cloudflare
+      Servidores de Archivos (File Server)
+        Almacena y comparte archivos en red
+        Ej: Samba, Windows File Server, NFS
+      Servidores de Virtualización
+        Ejecuta múltiples máquinas virtuales
+        Ej: VMware ESXi, Hyper-V, Proxmox
+      Servidores Proxy
+        Intermediario para peticiones de red
+        Filtrado y caché
+      Servidores de Backup
+        Almacena copias de seguridad
+    Sistemas Operativos para Servidores
+      Linux
+        Distribuciones: Ubuntu Server, CentOS, RHEL, Debian
+        Estabilidad y seguridad
+      Windows Server
+        Facilidad de integración en entornos Microsoft
+      UNIX
+        AIX, HP-UX, Solaris
+    Formas de Implementación
+      Servidores Físicos (Bare Metal)
+        Dedicados a una sola tarea/customer
+        Máximo rendimiento
+      Servidores Virtuales
+        Múltiples servidores en una máquina física
+        Flexibilidad y eficiencia de costos
+      Contenedores
+        Empaquetado de aplicaciones y dependencias
+        Ej: Docker, Kubernetes
+      Cloud (Nube)
+        IaaS, PaaS, SaaS
+        Escalabilidad bajo demanda
+    Protocolos y Servicios Clave
+      Redes
+        TCP/IP, UDP, HTTP/HTTPS, FTP/SSH, SMTP
+      Directorio
+        LDAP, Active Directory
+      Gestión Remota
+        SSH, RDP, Telnet
+    Administración y Monitoreo
+      Herramientas de Gestión
+        Paneles: cPanel, Plesk, Webmin
+        CLI (Línea de Comandos)
+      Monitoreo
+        Recursos: CPU, RAM, Disco, Red
+        Herramientas: Nagios, Zabbix, Prometheus
+      Mantenimiento
+        Parches y actualizaciones
+        Copias de seguridad (Backups)
+        Planes de recuperación ante desastres
+    Seguridad en Servidores
+      Firewall
+        Filtrado de tráfico de red
+      Hardening
+        Fortalecimiento del sistema
+      Certificados SSL/TLS
+        Cifrado de comunicaciones
+      Control de Acceso
+        Usuarios, grupos y permisos
