@@ -1,0 +1,90 @@
+mindmap
+  root((QA - Control de Calidad))
+    Conceptos Clave
+      Definición
+        Conjunto de actividades para asegurar la calidad
+        Enfocado en la prevención de defectos
+      Objetivo Principal
+        Cumplir con los requisitos establecidos
+        Satisfacer las expectativas del cliente
+        Mejora continua de procesos
+      Diferencias clave: QA vs QC
+        QA: Proactivo (Procesos)
+        QC: Reactivo (Productos)
+    Pilares Fundamentales
+      Estándares y Procesos
+        Definir cómo se debe trabajar
+      Documentación
+        Registros de procesos y pruebas
+      Auditorías
+        Verificación del cumplimiento
+      Gestión de la Configuración
+        Control de versiones y cambios
+    Procesos Principales
+      Planificación de la Calidad
+        Definir métricas y criterios de aceptación
+      Control de la Calidad (QC)
+        Inspección y pruebas del producto
+      Aseguramiento de la Calidad (QA)
+        Mejora de los procesos de desarrollo
+      Mejora Continua
+        Ciclo PDCA (Plan-Do-Check-Act)
+    Tipos de Pruebas (QC)
+      Pruebas Funcionales
+        Caja negra
+        Unitarias
+        De integración
+        De sistema
+        De aceptación
+      Pruebas No Funcionales
+        Rendimiento
+        Usabilidad
+        Seguridad
+        Compatibilidad
+      Pruebas de Regresión
+        Verificar que lo que funcionaba sigue funcionando
+    Estándares y Normas
+      ISO 9001
+        Sistema de Gestión de la Calidad
+      CMMI
+        Modelo de mejora de procesos
+      IEEE 829
+        Estándar para documentación de pruebas
+      ISTQB
+        Certificación para testers
+    Metodologías y Enfoques
+      Cascada (Waterfall)
+        Las pruebas son una fase específica
+      Ágiles (Scrum, Kanban)
+        Pruebas continuas e integradas
+        Calidad como responsabilidad de todos
+      DevOps
+        Integración y entrega continua (CI/CD)
+        Automatización total de pruebas
+    Herramientas Comunes
+      Gestión de Pruebas
+        Jira, TestRail, QTest
+      Automatización
+        Selenium, Cypress, Appium
+      Rendimiento
+        JMeter, LoadRunner
+      Gestión de Código
+        Git, SVN
+    Roles en el QA
+      Tester / QA Engineer
+        Ejecuta pruebas y reporta defectos
+      QA Analyst
+        Diseña casos de prueba y estrategias
+      Automation Engineer
+        Desarrolla scripts para pruebas automáticas
+      QA Lead / Manager
+        Gestiona el equipo y la estrategia de calidad
+    Beneficios
+      Reducción de Costos
+        Detección temprana de defectos
+      Mayor Satisfacción del Cliente
+        Producto de mayor calidad
+      Mejora de la Eficiencia
+        Procesos optimizados
+      Reducción de Riesgos
+        Menos fallos en producción
