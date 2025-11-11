@@ -1,0 +1,126 @@
+mindmap
+  root(Metodologías Ágiles)
+    Introducción
+      ¿Qué son las Metodologías Ágiles?
+        Enfoque iterativo e incremental
+        Flexibilidad y adaptación al cambio
+        Entrega temprana de valor al cliente
+      Manifesto Ágil (2001)
+        Individuos e interacciones sobre procesos y herramientas
+        Software funcionando sobre documentación extensiva
+        Colaboración con el cliente sobre negociación contractual
+        Respuesta al cambio sobre seguir un plan
+      Principios Ágiles
+        Satisfacción del cliente
+        Entregas frecuentes
+        Colaboración continua
+        Motivación y confianza
+        Comunicación face-to-face
+        Software funcionando como medida de progreso
+    Roles de Scrum
+      Product Owner (Dueño del Producto)
+        Define y prioriza el Product Backlog
+        Representa al cliente y stakeholders
+        Maximiza el valor del producto
+      Scrum Master
+        Facilita el proceso Scrum
+        Elimina impedimentos
+        Garantiza que el equipo siga las prácticas
+      Development Team (Equipo de Desarrollo)
+        Auto-organizado y multifuncional
+        Entrega incrementos de software
+        3-9 miembros
+    Integración de la Seguridad
+      DevSecOps
+        Seguridad integrada en el ciclo de desarrollo
+        "Shift Left" security
+      Prácticas de Seguridad Ágil
+        Security User Stories
+        Security Sprint Backlog items
+        Security Testing automatizado
+      Roles de Seguridad
+        Security Champion en el equipo
+        Asesoramiento de expertos en seguridad
+      Auditorías Continuas
+        Revisiones de seguridad en cada sprint
+        Penetration testing iterativo
+    Challenges and Solutions
+      Desafíos Comunes
+        Resistencia al cambio cultural
+        Estimación imprecisa
+        Technical debt acumulado
+        Distribución de equipos remotos
+        Gestión de expectativas de stakeholders
+      Soluciones Ágiles
+        Cambio gradual y formación continua
+        Planning Poker y story points
+        Refactoring continuo y definición de "Done"
+        Comunicación asíncrona y herramientas colaborativas
+        Demos frecuentes y transparencia
+    Eventos de Scrum
+      Sprint
+        Iteración de 1-4 semanas
+        Corazón de Scrum
+      Sprint Planning
+        Planificación del trabajo del sprint
+        8 horas para sprint de 4 semanas
+      Daily Scrum
+        Reunión diaria de 15 minutos
+        ¿Qué hice? ¿Qué haré? ¿Impedimentos?
+      Sprint Review
+        Demostración del incremento
+        Feedback de stakeholders
+      Sprint Retrospective
+        Mejora continua del proceso
+        3 horas para sprint de 4 semanas
+    Herramientas y Artefactos
+      Artefactos Scrum
+        Product Backlog
+          Lista priorizada de funcionalidades
+          Responsabilidad del Product Owner
+        Sprint Backlog
+          Tareas seleccionadas para el sprint
+          Compromiso del equipo de desarrollo
+        Increment
+          Producto funcionando al final del sprint
+          Cumple con la Definition of Done
+      Herramientas de Gestión
+        Jira
+        Trello
+        Azure DevOps
+        Confluence
+      Métricas Ágiles
+        Velocity
+        Burndown Chart
+        Cumulative Flow Diagram
+    Normativas y Cumplimiento
+      Ágil en Entornos Regulatorios
+        Documentación necesaria
+        Trazabilidad de requerimientos
+        Auditorías en entornos ágiles
+      Marcos de Cumplimiento
+        ISO 27001
+        GDPR
+        HIPAA
+        SOX
+      Estrategias para Cumplimiento
+        Compliance como parte de la Definition of Done
+        Epics de cumplimiento regulatorio
+        Automatización de controles
+        Documentación just-in-time
+    Beneficios en Proyectos de TI
+      Para el Negocio
+        Time-to-market más rápido
+        ROI más temprano
+        Mejor alineación con necesidades del cliente
+        Mayor satisfacción del usuario
+      Para los Equipos
+        Mayor motivación y autonomía
+        Mejor calidad del software
+        Reducción de riesgos
+        Adaptación rápida a cambios
+      Para la Organización
+        Transparencia y visibilidad
+        Mejor gestión de prioridades
+        Cultura de mejora continua
+        Eficiencia en el uso de recursos
