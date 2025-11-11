@@ -1,0 +1,144 @@
+mindmap
+  root((REDES))
+    Conceptos Básicos
+      Definición
+        Interconexión de dispositivos para compartir recursos
+      Objetivos Principales
+        Compartir recursos e información
+        Comunicación eficiente
+        Acceso remoto
+        Colaboración
+    Topologías de Red
+      Físicas
+        Estrella
+        Bus
+        Anillo
+        Malla
+        Árbol
+      Lógicas
+        Broadcast
+        Token Passing
+    Clasificación por Alcance
+      PAN (Red de Área Personal)
+        Bluetooth, Zigbee
+      LAN (Red de Área Local)
+        Oficina, casa, campus
+      MAN (Red de Área Metropolitana)
+        Ciudad, área metropolitana
+      WAN (Red de Área Amplia)
+        Internet, redes globales
+      VLAN (Red de Área Local Virtual)
+        Segmentación lógica
+    Dispositivos de Red
+      Capa Física
+        Hub
+        Repetidor
+      Capa de Enlace
+        Switch
+        Bridge
+      Capa de Red
+        Router
+      Capa de Aplicación
+        Firewall
+        Access Point
+    Modelos de Referencia
+      OSI (7 Capas)
+        Física
+        Enlace de Datos
+        Red
+        Transporte
+        Sesión
+        Presentación
+        Aplicación
+      TCP/IP (4 Capas)
+        Enlace de Red
+        Internet
+        Transporte
+        Aplicación
+    Protocolos Fundamentales
+      TCP/IP
+        Conjunto de protocolos de Internet
+      TCP
+        Orientado a conexión
+        Confiable
+      UDP
+        No orientado a conexión
+        Rápido
+      IP
+        Direccionamiento y enrutamiento
+    Direccionamiento IP
+      IPv4
+        32 bits
+        Clases A, B, C, D, E
+        Direcciones públicas y privadas
+      IPv6
+        128 bits
+        Mayor espacio de direcciones
+      Subnetting
+        División de redes
+        Máscaras de subred
+    Servicios y Protocolos de Aplicación
+      DNS
+        Resolución de nombres
+      DHCP
+        Asignación automática de IPs
+      HTTP/HTTPS
+        Navegación web
+      FTP/SFTP
+        Transferencia de archivos
+      SMTP/POP3/IMAP
+        Correo electrónico
+    Medios de Transmisión
+      Guiados
+        Cable UTP (Categorías 5e, 6, 7)
+        Cable Coaxial
+        Fibra Óptica (Multimodo, Monomodo)
+      No Guiados
+        Wi-Fi (IEEE 802.11)
+        Radiofrecuencia
+        Microondas
+        Satélite
+    Tecnologías Inalámbricas
+      Wi-Fi Standards
+        802.11a/b/g/n/ac/ax
+        2.4 GHz vs 5 GHz vs 6 GHz
+      Bluetooth
+        Corto alcance
+      Cellular
+        4G LTE, 5G
+      LoRaWAN
+        Bajo consumo, largo alcance
+    Seguridad de Red
+      Firewalls
+        Filtrado de tráfico
+      VPN
+        Túneles cifrados
+      Cifrado
+        SSL/TLS, IPsec
+      Autenticación
+        WPA2, WPA3, 802.1X
+      IDS/IPS
+        Detección y prevención de intrusos
+    Tipos de Red por Arquitectura
+      Cliente-Servidor
+        Centralizado
+        Escalable
+      Peer-to-Peer (P2P)
+        Descentralizado
+        Compartición directa
+    Virtualización de Red
+      SDN (Redes Definidas por Software)
+        Separación plano de control y datos
+      NFV (Virtualización de Funciones de Red)
+        Funciones como software
+    Administración de Red
+      Monitoreo
+        Herramientas: Nagios, Zabbix, PRTG
+      Métricas Clave
+        Ancho de banda
+        Latencia
+        Jitter
+        Pérdida de paquetes
+      Resolución de Problemas
+        Ping, Traceroute
+        Analizadores de protocolos
