@@ -1,0 +1,170 @@
+mindmap
+  root(Desarrollo de Software)
+    Introducción
+      ¿Qué es el Desarrollo?
+        Creación de aplicaciones y sistemas
+        Solución de problemas mediante código
+      Tipos de Desarrollo
+        Web
+        Móvil
+        Desktop
+        Embebido
+        Videojuegos
+      Ciclo de Vida del Software
+        Análisis de requisitos
+        Diseño
+        Desarrollo
+        Pruebas
+        Implementación
+        Mantenimiento
+    Frontend
+      Definición
+        Parte visible para el usuario
+        Interfaz de usuario (UI)
+        Experiencia de usuario (UX)
+      Tecnologías Principales
+        HTML
+          Estructura de la página
+        CSS
+          Estilos y diseño
+          Frameworks: Bootstrap, Tailwind
+        JavaScript
+          Interactividad y lógica del cliente
+      Frameworks y Librerías
+        React
+        Angular
+        Vue.js
+        Svelte
+      Responsive Design
+        Adaptación a dispositivos móviles
+        Mobile-first approach
+      Accesibilidad Web
+        WCAG guidelines
+        Diseño inclusivo
+    Backend
+      Definición
+        Lógica de negocio
+        Manejo de datos
+        Servidor y bases de datos
+      Componentes Principales
+        Servidor Web
+        Base de Datos
+        API
+        Lógica de Aplicación
+      Lenguajes de Programación
+        JavaScript (Node.js)
+        Python
+        Java
+        PHP
+        C#
+        Ruby
+      Bases de Datos
+        SQL
+          MySQL
+          PostgreSQL
+          SQL Server
+        NoSQL
+          MongoDB
+          Redis
+          Cassandra
+      Frameworks Backend
+        Express.js (Node.js)
+        Django (Python)
+        Spring Boot (Java)
+        Laravel (PHP)
+    Relación Frontend y Backend
+      Arquitectura Cliente-Servidor
+        Frontend: Cliente
+        Backend: Servidor
+      Flujo de Comunicación
+        Usuario interactúa con Frontend
+        Frontend hace peticiones al Backend
+        Backend procesa y devuelve datos
+        Frontend muestra la respuesta
+      Separación de Responsabilidades
+        Frontend: Presentación
+        Backend: Lógica y datos
+      Ventajas de la Separación
+        Desarrollo paralelo
+        Escalabilidad independiente
+        Mantenimiento más fácil
+    Full Stack Developer
+      Definición
+        Desarrollador que trabaja en Frontend y Backend
+        "Unicornio" del desarrollo
+      Habilidades Técnicas Requeridas
+        Frontend: HTML, CSS, JavaScript
+        Backend: Lenguaje de servidor, BD
+        DevOps básico
+      Conocimientos Adicionales
+        Control de versiones (Git)
+        APIs RESTful
+        Seguridad web
+        Performance optimization
+      Perfil del Desarrollador
+        Versátil y adaptable
+        Visión global del proyecto
+        Buen comunicador
+    Comunicación API + Full Stack
+      ¿Qué es una API?
+        Interfaz de Programación de Aplicaciones
+        Contrato entre frontend y backend
+      Tipos de APIs
+        REST
+        GraphQL
+        SOAP
+      Comunicación HTTP
+        Métodos: GET, POST, PUT, DELETE
+        Status codes: 200, 404, 500
+        Headers y body
+      Formato de Datos
+        JSON (más común)
+        XML
+      Flujo Completo
+        Frontend → Petición HTTP → Backend
+        Backend → Procesa → Base de Datos
+        Backend → Respuesta JSON → Frontend
+        Frontend → Renderiza datos → Usuario
+    Herramientas de Apoyo
+      Control de Versiones
+        Git
+        GitHub
+        GitLab
+      IDEs y Editores
+        VS Code
+        WebStorm
+        Sublime Text
+      Desarrollo Colaborativo
+        Slack
+        Jira
+        Trello
+      Contenerización
+        Docker
+        Kubernetes
+      CI/CD
+        Jenkins
+        GitHub Actions
+        GitLab CI
+      Pruebas y Calidad
+        Jest (JavaScript)
+        Selenium
+        Postman (APIs)
+    Casos Prácticos
+      Aplicación Web Básica
+        Frontend: React
+        Backend: Node.js + Express
+        Base de datos: MongoDB
+      E-commerce Completo
+        Frontend: Angular
+        Backend: Java Spring Boot
+        Base de datos: PostgreSQL
+        APIs de pago: Stripe
+      Red Social
+        Frontend: Vue.js
+        Backend: Python Django
+        Base de datos: MySQL + Redis
+        WebSockets para tiempo real
+      Aplicación Móvil + Backend
+        Mobile: React Native
+        Backend: Firebase
+        APIs REST personalizadas
