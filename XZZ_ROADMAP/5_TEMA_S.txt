@@ -38,7 +38,7 @@ mindmap
         Security User Stories
         Security Sprint Backlog items
         Security Testing automatizado
-      Roles de Seguridad
+      Roles de Seguridad*9
         Security Champion en el equipo
         Asesoramiento de expertos en seguridad
       Auditorías Continuas

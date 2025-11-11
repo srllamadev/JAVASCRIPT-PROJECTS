@@ -1,0 +1,180 @@
+mindmap
+  root((Bases de Datos))
+    Introducción
+      Definición
+        Conjunto organizado de datos
+        Almacenamiento estructurado
+        Recuperación eficiente de información
+      Objetivos Principales
+        Persistencia de datos
+        Integridad y consistencia
+        Acceso concurrente
+        Seguridad y privacidad
+      Componentes Clave
+        Datos
+        Esquema
+        Motor de BD
+        Lenguaje de consultas
+    Tipos de Bases de Datos
+      Según Modelo de Datos
+        Relacional (SQL)
+        NoSQL
+        Orientada a Objetos
+        Jerárquica
+        En Red
+      Según Ubicación
+        Centralizada
+        Distribuida
+        Cloud
+        Local
+      Según Escalabilidad
+        Vertical
+        Horizontal
+    Modelos de Datos
+      Relacional (SQL)
+        Tablas con filas y columnas
+        Claves primarias y foráneas
+        Integridad referencial
+      Documental
+        MongoDB, CouchDB
+        JSON/BSON documents
+      Clave-Valor
+        Redis, DynamoDB
+        Alto rendimiento
+      Columnar
+        Cassandra, HBase
+        Optimizado para analytics
+      Grafo
+        Neo4j, Amazon Neptune
+        Nodos y relaciones
+    Sistemas Gestores de BD (DBMS)
+      Relacionales
+        MySQL
+        PostgreSQL
+        Oracle Database
+        SQL Server
+        SQLite
+      NoSQL
+        MongoDB
+        Redis
+        Cassandra
+        Elasticsearch
+      Cloud
+        Amazon RDS
+        Google Cloud SQL
+        Azure SQL Database
+        Firebase
+    Lenguajes de Consulta
+      SQL (Structured Query Language)
+        DDL
+          CREATE
+          ALTER
+          DROP
+        DML
+          SELECT
+          INSERT
+          UPDATE
+          DELETE
+        DCL
+          GRANT
+          REVOKE
+        TCL
+          COMMIT
+          ROLLBACK
+      Lenguajes NoSQL
+        MongoDB Query Language
+        Cypher (Neo4j)
+        CQL (Cassandra)
+    Diseño de Bases de Datos
+      Modelado Conceptual
+        Diagrama Entidad-Relación
+        Entidades
+        Atributos
+        Relaciones
+      Modelado Lógico
+        Normalización
+        Formas normales (1FN, 2FN, 3FN)
+        Transformación a tablas
+      Modelado Físico
+        Índices
+        Particionamiento
+        Optimización
+    Operaciones Fundamentales
+      CRUD
+        Create (INSERT)
+        Read (SELECT)
+        Update (UPDATE)
+        Delete (DELETE)
+      Consultas Avanzadas
+        JOINs
+        Subconsultas
+        Agregaciones
+        Funciones de ventana
+      Transacciones
+        ACID Properties
+          Atomicidad
+          Consistencia
+          Aislamiento
+          Durabilidad
+        COMMIT y ROLLBACK
+    Administración y Mantenimiento
+      Tareas del DBA
+        Backup y Recovery
+        Monitorización
+        Optimización
+        Seguridad
+      Backup Strategies
+        Completo
+        Incremental
+        Diferencial
+        Point-in-Time Recovery
+      Performance Tuning
+        Índices
+        Query Optimization
+        Normalización/Desnormalización
+    Seguridad en Bases de Datos
+      Control de Acceso
+        Usuarios y roles
+        Permisos granulars
+        Autenticación
+      Cifrado
+        Datos en reposo
+        Datos en tránsito
+        Transparent Data Encryption
+      Auditoría
+        Logs de actividad
+        Detección de intrusiones
+        Compliance
+    Tendencias y Futuro
+      Big Data
+        Hadoop
+        Spark
+        Data Lakes
+      Bases de Datos en Tiempo Real
+        In-Memory Databases
+        Stream Processing
+      Machine Learning Integration
+        Bases de datos vectoriales
+        Predictive queries
+        AI-powered optimization
+      Serverless Databases
+        Aurora Serverless
+        Cosmos DB
+        Automatic scaling
+    Casos de Uso Comunes
+      Aplicaciones Web
+        E-commerce
+        Redes sociales
+        Content management
+      Enterprise
+        ERP
+        CRM
+        Sistemas financieros
+      Analytics y BI
+        Data Warehousing
+        Business Intelligence
+        Reportes y dashboards
+      IoT
+        Time-series data
+        Sensor data
+        Real-time monitoring
